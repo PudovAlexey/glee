@@ -1,0 +1,76 @@
+@import '../../scss/vars.scss';
+
+.footer {
+	color: $graySign;
+	font-size: 14px;
+
+	ul {
+		list-style: none;
+	}
+	
+
+	&__top {
+		padding: 80px 0;
+		display: flex;
+		align-items: baseline;
+		justify-content: space-around;
+		
+	}
+
+	&__title {
+		color: #1f2044;
+		font-family: $secondFont;
+		text-transform: uppercase;
+		margin-bottom: 12px;
+	}
+
+	&__item {
+	}
+
+	&__contacts {
+		display: block;
+		color: $graySign;
+		text-decoration: none;
+	}
+
+	&__addressSign {
+		display: block;
+	}
+
+	&__contactsSign {
+		text-transform: uppercase;
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		padding: 40px 0;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	&__menuItem {
+		padding: 0 20px;
+		border-right: 1px solid $graySign;
+	}
+
+	&__input {
+		padding: 0px 15px;
+		height: 40px;
+		font-size: 12px;
+		color: #234969;
+		background-color: rgba(252, 215, 182, 0.2);
+	}
+
+	&__button {
+		@extend %button
+	}
+
+	&__text {
+		max-width: 230px;
+		margin-bottom: 45px;
+	}
+}

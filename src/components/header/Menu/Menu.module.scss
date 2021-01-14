@@ -1,0 +1,21 @@
+@import '../../../scss/vars.scss';
+
+.menu {
+	display: flex;
+	justify-content: center;
+	font-family: 'Rubik';
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 500;
+
+	&__link {
+		text-decoration: none;
+		& + & {
+			margin-left: 35px;
+		}
+		&_drop {
+			position: relative;
+			height: 500px;
+		}
+	}
+}

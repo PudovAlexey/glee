@@ -1,0 +1,18 @@
+@import '../../../scss/vars.scss';
+
+.home {
+
+	&__offer {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__offerItem {
+		padding: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fef7f0;
+		border-right: 1px solid $graySign;
+	}
+	}

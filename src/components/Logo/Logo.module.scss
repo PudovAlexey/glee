@@ -1,0 +1,19 @@
+@import '../../scss/vars.scss';
+
+.logo {
+	
+		display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__picture {
+		margin-right: 15px;
+	}
+
+	&__name {
+		font-family: $defaultFont !important;
+		font-size: 36px;
+		line-height: 58px;
+		color: $mainblue;
+	}
+}

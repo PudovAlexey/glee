@@ -1,0 +1,40 @@
+@import '../../../../scss/vars.scss';
+
+.mainSlide {
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__title {
+		font-size: 72px;
+		color: #243f4d;
+		line-height: 70px;
+		font-weight: 500;
+	}
+
+	&__text {
+		margin: 50px 0;
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	&__textbox {
+		margin-right: 120px;
+		max-width: 405px;
+	}
+
+	&__button {
+		height: 60px;
+		width: 200px;
+		padding: 15px 20px 25px 30px;
+		background-color: $buttonColor;
+		color: #fff;
+		display: flex;
+		justify-content: space-between;
+		border: none;
+		font-size: 15px;
+		font-weight: 500;
+	}
+}

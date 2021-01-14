@@ -1,0 +1,35 @@
+@import '../../../../scss/vars.scss';
+
+.dropdown {
+
+	&__wrapper {
+		overflow: hidden;
+		position: absolute;
+		height: 500px;
+		width: 200px;
+	}
+
+	&__list {
+	margin-top: 15px;
+	list-style: none;
+	background-color: #fff;
+	text-decoration: none;
+	color: $mainblue;
+	box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+	border-radius: 10px;
+	border: none;
+	position: absolute;
+	width: 150px;
+	overflow: hidden;
+	border-top: 15px solid $mainpink;
+	z-index: 200;
+	height: 200px;
+	}
+
+	&__item {
+		padding: 5px 10px;
+		border-bottom: 2px solid $mainaqua;
+		z-index: 500;
+		transition: transform ease .3;
+	}
+}

@@ -1,0 +1,39 @@
+@import '../../../scss/vars.scss';
+
+.slick {
+	&__wrap {
+		height: 100vh;
+		position: relative;
+		background-color: $mainpink;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__track {
+		position: relative;
+		display: flex;
+	}
+
+	&__dots {
+		position: absolute;
+		bottom: 45px;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	&__dot {
+		border-radius: 50%;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		background-color: rgba(255, 255, 255, .302);
+
+		& + & {
+			margin-left: 15px;
+		}
+	}
+}

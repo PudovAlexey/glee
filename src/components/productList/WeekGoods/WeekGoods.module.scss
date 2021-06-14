@@ -1,0 +1,35 @@
+@import '../../../scss/vars.scss';
+
+.week {
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 10px;
+    padding: 45px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_kitchen {
+        padding: 50px 45px 20px 45px;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        border-radius: 10px;
+    }
+
+    &__textBox {
+        margin-top: 80px; 
+        text-align: center;
+        color: $mainblue;
+        font-family: $secondFont;
+    }
+
+    &__Title {
+        font-size: 16px;
+    }
+
+    &__Price {
+        color: $buttonColor;
+        font-size: 16px;
+    }
+
+}
+  
+  

@@ -1,0 +1,25 @@
+@import '../../../scss/vars.scss';
+
+.newProduct {
+    position: relative;
+
+    &__textBox {
+        position: absolute;
+        top: 45px;
+        left: 35px;
+    }
+
+    &__name {
+        @extend %title;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 25px;
+        max-width: 150px;
+        text-align: left;
+    }
+    &__complectation {
+        display: block;
+        font-size: 16px;
+        color: $buttonColor;
+    }
+}

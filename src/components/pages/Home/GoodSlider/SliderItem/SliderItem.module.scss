@@ -1,0 +1,34 @@
+@import '../../../../../scss/vars.scss';
+
+.SliderItem {
+    background-color: $mainpink;
+    min-height: 390px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+
+    &__textBox {
+        position: relative;
+        max-width: 320px;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: -250px;
+    }
+
+    &__name {
+        font-size: 26px;
+        font-family: $secondFont;
+        line-height: 32px;
+        color: $mainblue;
+    }
+
+    &__text {
+        font-family: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        margin: 35px 0;
+    }
+}

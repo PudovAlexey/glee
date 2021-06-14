@@ -25,21 +25,22 @@ function Slider(props) {
 		}
 	)
 
-	// useEffect(() => {
-	// 	slider.mainSlider.slidesToShow ? 
-	// })
+	//  useEffect(() => {
+	//  	slider.mainSlider.slidesToShow ? 
+	//  })
 
 
 	let svitchSlideDots = (slide) => {
+		let sliderItems = slider.mainSlider.sliderItems
 		let showSliders = slider.mainSlider.slidesToShow
 		let scrollSliders = slider.mainSlider.slidesToScroll
+		let leftPosition = showSliders % 2 == 0 ? Math.floor(showSliders / 2) - 1 : Math.floor(showSliders / 2);
+		let rightPosition = Math.floor(showSliders / 2)
 
 		let sliderPosition = slider.mainSlider.sliderItems.map((sliderItem, slideIndex, slideArr) => {
-			if (sliderItem.id >= slide.id && sliderItem.id <= slide.id + showSliders - 1) {
+			if (slide.id >= sliderItem.id - leftPosition && slide.id <= sliderItem.id + rightPosition) {
 				return {...sliderItem, isPosition: 'active'}
-			} else if (sliderItem.id > slideArr.length - showSliders && sliderItem.id <= slideArr.length) {
-				return {...sliderItem, isPosition: 'active'}
-			} else if (sliderItem.id < slide.id) {
+			}  else if (sliderItem.id < slide.id) {
 				return {...sliderItem, isPosition: 'prev'}
 			} else if (sliderItem.length <= slide.id) {
 			} else {

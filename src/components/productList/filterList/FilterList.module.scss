@@ -1,0 +1,11 @@
+@import '../../../scss/vars.scss';
+.filterButton {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    & + & {
+        margin-left: 30px;
+    }
+}
